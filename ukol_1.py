@@ -2,15 +2,17 @@ moje_jmeno = "Anna.Vycitalova"
 email = moje_jmeno + "@czechitas.cz"
 print(email)
 
+jmeno = input("Zadej jméno:")
+prijmeni = input("Zadej příjmení:")
+jmeno_a_prijmeni = jmeno + " " + pPrijmeni
 
-Jmeno = input("Zadej jméno:")
-Prijmeni = input("Zadej příjmení:")
-jmeno_a_prijmeni = Jmeno + " " + Prijmeni
 print(jmeno_a_prijmeni)
-print(jmeno_a_prijmeni .upper())
-print(jmeno_a_prijmeni .lower())
-print(Jmeno[0] .upper() + Jmeno[1:] .lower() + " " + Prijmeni[0] .upper() + Prijmeni[1:] .lower())
-print(Jmeno[0] + ". " + Prijmeni[0] + ".")
-if len(Jmeno) > 5:
-    print(Jmeno[0]+ ". " + Prijmeni)
-else: print(Jmeno[0] .upper() + Jmeno[1:] .lower() + " " + Prijmeni[0] .upper() + Prijmeni[1:] .lower())
+print(jmeno_a_prijmeni.upper())
+print(jmeno_a_prijmeni.lower())
+print(jmeno[0].upper() + jmeno[1:].lower() + " " + prijmeni[0].upper() + prijmeni[1:].lower())
+print(jmeno[0] + ". " + prijmeni[0] + ".")
+
+if len(jmeno) > 5:
+    print(jmeno[0]+ ". " + prijmeni)
+else: 
+    print(jmeno[0].upper() + jmeno[1:].lower() + " " + prijmeni[0].upper() + prijmeni[1:].lower())
