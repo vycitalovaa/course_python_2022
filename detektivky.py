@@ -4,4 +4,5 @@ sales = {
     "Zločinný steh": 2565,
 }
 sales["Vrah zavolá v deset"] = 0
+sales["Vrah zavolá v deset"] = 100
 print(sales)
