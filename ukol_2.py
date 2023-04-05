@@ -9,5 +9,11 @@ sklad = {
 kod_soucastky = input("Zadejte kód součástky:")
 if kod_soucastky in sklad:
     mnozstvi_soucastek = int(input("Zadejte množství součástek: "))
-if mnozstvi_soucastek <= sklad[kod_soucastky]:
-        print("Součástky máme!")
+else:
+    print("Součástka není skladem!")
+    if mnozstvi_soucastek > sklad[kod_soucastky]:
+        print("Součástky jsou dostupné pouze v omezeném množství kusů.")
+        sklad.pop(kod_soucastky)
+    else:   
+        print("Součástky máme")
+
