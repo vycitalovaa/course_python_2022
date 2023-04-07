@@ -16,6 +16,8 @@ if mnozstvi_soucastek > sklad[kod_soucastky]:
     sklad.pop(kod_soucastky)
 else:   
     odpoved ="Součástky máme."    
+    sklad[kod_soucastky] -= mnozstvi_soucastek
 print(odpoved)
+print(sklad)
 
 
