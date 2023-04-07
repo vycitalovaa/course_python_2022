@@ -15,7 +15,7 @@ if mnozstvi_soucastek > sklad[kod_soucastky]:
     odpoved = "Součástka je skladem v omezeném množství"
     sklad.pop(kod_soucastky)
 else:   
-    odpoved ="Součástky máme."
-    sklad[kod_soucastky] -= sklad[mnozstvi_soucastek]
+    odpoved ="Součástky máme."    
 print(odpoved)
+
 
