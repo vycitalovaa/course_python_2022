@@ -1,5 +1,5 @@
 import json
-with open ('course_python_2022/body.json', encoding='utf-8') as file:
+with open ("course_python_2022/body.json", encoding='utf-8') as file:
     points = json.load(file)
 prospel = 0
 prospech = {}
