@@ -7,14 +7,19 @@ def user_number(cislo):
         return True
     else: 
         return False
-        exit()  
-
-print(user_number(cislo))
-text_zpravy = input("Zadej text zprávy:")
+        
 def message(text_zpravy):
     pocet_znaku = len(text_zpravy)
     cena_za_sms = 3
-    celkem = ceil(pocet_znaku / 180) * cena_za_sms
-    return celkem        
-    print(f"{message}")
+    celkem = (ceil(pocet_znaku / 180)) * cena_za_sms
+    return celkem       
+    
+if user_number(cislo):
+    True
+    text_zpravy = input("Zadej text zpravy:")
+    celkem = message(text_zpravy)
+    print(f"Zpráva bude stát {celkem} Kč.")
+else: 
+    False
+    print(f"Telefonní číslo je ve špatném formátu.")
 
