@@ -17,7 +17,7 @@ print(ranni_teploty)
 nocni_teploty = [t[3] for t in teploty]
 print(nocni_teploty)   
 
-dvojice = [[t[0], t[3]] for t in teploty]
+dvojice = [[t[1], t[3]] for t in teploty]
 print(dvojice)
 
   
