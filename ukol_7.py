@@ -11,6 +11,7 @@ class Auto:
             return f"Vozidlo není k dispozici"
         else:
             return f"Potvrzuji zapůjčení vozidla"
+            
 
     def getInfo(self):
         return f"{self.typ_vozidla} s registrační značkou {self.registracni_znacka}"
@@ -23,7 +24,7 @@ if pujcovane_vozidlo == "Peugeot":
 elif pujcovane_vozidlo == "Škoda":
     print(f"Vozidlo {auto1.getInfo()}. {auto2.pujc_auto()}.")
 else:
-    print(f"Vozidlo nemáme.")
+    print(f"Vozidlo není dostupné")
 
     
         
