@@ -8,12 +8,12 @@ class Auto:
     def pujc_auto(self):
         self.dostupne = False        
         if self.dostupne:
-            pujceno_zprava = "Vozidlo není k dispozici"
+            return f"Vozidlo není k dispozici"
         else:
-            pujceno_zprava = "Potvrzuji zapůjčení vozidla"
+            return f"Potvrzuji zapůjčení vozidla"
 
     def getInfo(self):
-        return f"Vozidlo {self.typ_vozidla} s registrační značkou {self.registracni_znacka}"
+        return f"{self.typ_vozidla} s registrační značkou {self.registracni_znacka}"
 auto1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
 auto2 = Auto("1P3 4747", "Škoda Octavia", 41253)
 
