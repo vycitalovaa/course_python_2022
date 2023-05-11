@@ -5,9 +5,8 @@ class Auto:
         self.najete_km = int(najete_km)
         self.dostupne = True
 
-    def pujc_auto(self): 
-            
-        if self.dostupne:
+    def pujc_auto(self):
+        if self.dostupne :
             self.dostupne = False
             return f"Potvrzuji zapůjčení vozilda"
         else:
@@ -19,7 +18,12 @@ class Auto:
 auto1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
 auto2 = Auto("1P3 4747", "Škoda Octavia", 41253)
 
-pujcovane_vozidlo = input("Zadej značku vozidla, které si chceš půjčit:")
+pujcovane_auto = input("Zadej značku vozidla, které si chceš půjčit:")
+
+
+
+
+
 
 
 
