@@ -5,7 +5,7 @@ class Auto:
         self.najete_km = int(najete_km)
         self.dostupne = True
 
-    def puj_auto(self):
+    def pujc_auto(self):
         self.dostupne = False    
         if self.dostupne:
             pujceno_zprava = "Vozidlo není k dispozici"
@@ -14,15 +14,17 @@ class Auto:
 
     def getInfo(self):
         return f"Máme vozidlo {self.typ_vozidla} s registrační značkou {self.registracni_znacka}."
-auto1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
-auto2 = Auto("1P3 4747", "Škoda Octavia", 41253)
-print(auto2.info())
-auta = [auto1, auto2]
+
+auto_1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
+auto_2 = Auto("1P3 4747", "Škoda Octavia", 41253)
+print(auto2.getInfo())
 
 pujcovane_vozidlo = input("Zadej značku vozidla, které si chceš půjčit:")
 if pujcovane_vozidlo == "Peugeot":
-    auto1.pujc_auto()
-    auto1.getInfo()
+    auto_1.pujc_auto()
+    auto_1.getInfo()
 elif pujcovane_vozidlo == "Škoda":
-    auto2.pujc_auto()
-    auto2.getInfo()
+    auto_2.pujc_auto()
+    auto_2.getInfo()
+else:
+    print(f"Půjčované vozidlo není k dipozici")
