@@ -11,6 +11,10 @@ class Auto:
             return f"Potvrzuji zapůjčení vozilda"
         else:
             return f"Vozidlo není dostupné"
+        if pujcovane_vozidlo == "Peugeot":    
+            return f"Máme vozidlo {self.auto1}. {self.pujceno_dostupne}"
+        elif pujcovane_vozidlo == "Škoda":        
+            return f"Máme vozidlo {self.auto2}. {self.dostupne}"     
             
 
     def getInfo(self):
@@ -18,7 +22,10 @@ class Auto:
 auto1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
 auto2 = Auto("1P3 4747", "Škoda Octavia", 41253)
 
-pujcovane_auto = input("Zadej značku vozidla, které si chceš půjčit:")
+pujcovane_vozidlo = input("Zadej značku vozidla, které si chceš půjčit:")
+pujcovane_vozidlo = [auto1, auto2]
+
+
 
 
 
