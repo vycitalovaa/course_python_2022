@@ -23,9 +23,6 @@ auto1 = Auto("4A2 3020", "Peugeot 403 Cabrio", 47534)
 auto2 = Auto("1P3 4747", "Škoda Octavia", 41253)
 
 pujcovane_vozidlo = input("Zadej značku vozidla, které si chceš půjčit:")
-pujcovane_vozidlo = [auto1, auto2]
-
-
 
 
 
