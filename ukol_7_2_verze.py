@@ -28,3 +28,12 @@ elif pujcovane_vozidlo == "Škoda":
     auto_2.getInfo()
 else:
     print(f"Půjčované vozidlo není k dipozici")
+
+if pujcovane_vozidlo == "Peugeot":
+    auto_1.pujc_auto()
+    auto_1.getInfo()
+elif pujcovane_vozidlo == "Škoda":
+    auto_2.pujc_auto()
+    auto_2.getInfo()
+else:
+    print(f"Půjčované vozidlo není k dipozici")
