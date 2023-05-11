@@ -12,7 +12,7 @@ class Auto:
         else:
             return f"Vozidlo není dostupné"
         if pujcovane_vozidlo == "Peugeot":    
-            return f"Máme vozidlo {self.auto1}. {self.pujceno_dostupne}"
+            return f"Máme vozidlo {self.auto1}. {self.dostupne}"
         elif pujcovane_vozidlo == "Škoda":        
             return f"Máme vozidlo {self.auto2}. {self.dostupne}"     
             
