@@ -10,8 +10,7 @@ class Auto:
             self.dostupne = False 
             print("Vozidlo je k zapůjčení")            
         else: 
-            print("Vozidlo není dostupné")
-       
+            print("Vozidlo není dostupné")    
 
 
     def getInfo(self):
